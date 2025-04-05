@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Professional portfolio showcasing my work, skills, and expertise in web development and design">
+  <meta name="keywords" content="portfolio, web developer, designer, professional, projects">
+  <meta name="author" content="Mohammed Samier Mouawad">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/android-chrome-192x192.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <!-- Title -->
+  <title>Mohammed-samier| Professional Portfolio</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Defer non-critical JavaScript -->
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+  <main>
+    <!-- Professional Sidebar Component -->
+    <aside class="profile-sidebar" data-sidebar>
+      <!-- Profile Information Container -->
+      <div class="profile-card">
+        <!-- Profile Avatar -->
+        <figure class="profile-avatar">
+          <img src="assets/images/my-avatar.png" alt="Mohammed Samier" width="80" />
+        </figure>
+
+        <!-- Professional Details -->
+        <div class="profile-details">
+          <h1 class="profile-name" title="Mohammed Samier">
+            Mohammed Samier
+          </h1>
+          <p class="profile-role">Frontend Developer</p>
+        </div>
+
+        <!-- Contact Toggle Button -->
+        <button class="profile-expand-btn" data-sidebar-btn>
+          <i class="fa-solid fa-chevron-down"></i> </button>
+      </div>
+
+      <!-- Extended Contact Information -->
+      <div class="contact-container">
+        <div class="divider"></div>
+
+        <!-- Contact Details List -->
+        <ul class="contact-list">
+          <!-- Email Contact -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-content">
+              <p class="contact-label">Email</p>
+              <a href="mailto:mohammedsamiermouawad@gmail.com" class="contact-value">
+                mohammedsamiermouawad@gmail.com
+              </a>
+            </div>
+          </li>
+
+          <!-- Phone Contact -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-content">
+              <p class="contact-label">Phone</p>
+              <a href="tel:+201012486445" class="contact-value">+20 101 248 6445</a>
+            </div>
+          </li>
+
+          <!-- Birthday Information -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="contact-content">
+              <p class="contact-label">Birthday</p>
+              <time datetime="2003-11-16" class="contact-value">November 16, 2003</time>
+            </div>
+          </li>
+
+          <!-- Location Information -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-content">
+              <p class="contact-label">Location</p>
+              <address class="contact-value">Egypt</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- Professional Social Networks -->
+        <ul class="social-network-list">
+          <li class="social-network-item">
+            <a href="https://www.linkedin.com/in/mohammed-samier-mouawad/" class="social-network-link" target="_blank">
+              <i class="fa-brands fa-linkedin"></i> </a>
+          </li>
+          <li class="social-network-item">
+            <a href="https://x.com/Mouawad18804" class="social-network-link" target="_blank">
+              <i class="fa-solid fa-x"></i> </a>
+          </li>
+          <li class="social-network-item">
+            <a href="https://github.com/mohamed-samir-dev" class="social-network-link" target="_blank">
+              <i class="fa-brands fa-github"></i> </a>
+          </li>
+          <li class="social-network-item">
+            <a href="https://wa.me/201012486445 " class="social-network-link" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> </a>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content-wrapper">
+      <!-- Primary Navigation -->
+      <nav class="primary-navigation">
+        <ul class="navigation-menu">
+          <li class="menu-item">
+            <button id="About-btn" data-nav-link>About</button>
+          </li>
+
+          <li class="menu-item">
+            <button id="resume-btn" data-nav-link>Resume</button>
+          </li>
+
+          <li class="menu-item">
+            <button id="Portfolio-btn" data-nav-link>Portfolio</button>
+          </li>
+          <li class="menu-item">
+            <button id="Contact-btn" data-nav-link>Contact</button>
+          </li>
+
+
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+      <div class="slider">
+        <section id="about" class="page active">
+          <header class="section-header">
+            <h2 class="section-title">About Me</h2>
+          </header>
+
+          <section class="overview-content">
+            <p class="overview-text">
+              <span class="highlight-text">Frontend</span> developer with expertise in building dynamic,
+              <span class="highlight-text">responsive web applications </span> using <span
+                class="highlight-text">HTML</span> ,
+              <span class="highlight-text">CSS</span>, <span class="highlight-text">JavaScript</span>, and <span
+                class="highlight-text">React</span>.
+              Leveraging a strong foundation in computer science and a
+              dedication to continuous learning, I develop user-focused designs
+              that are both functional and visually engaging. Skilled in
+              transforming concepts into interactive and seamless digital
+              experiences, I aim to deliver intuitive solutions that meet user
+              and business needs.
+            </p>
+
+            <p class="overview-text">
+              With a problem-solving mindset and keen attention to detail, I
+              strive to build seamless digital experiences. I am also committed
+              to improving my coding skills through algorithm challenges and
+              continuous learning.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+          <section class="expertise-showcase">
+            <h3 class="showcase-title">What i'm doing</h3>
+
+            <ul class="expertise-grid">
+              <!-- Web Design Service -->
+              <li class="expertise-card">
+                <div class="expertise-icon">
+                  <img src="assets/images/icon-design.svg" alt="Web Design" width="40" />
+                </div>
+
+                <div class="expertise-details">
+                  <h4 class="expertise-title">Web Design</h4>
+                  <p class="expertise-description">
+                    Delivering modern, high-quality design solutions with
+                    professional precision and attention to detail.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Web Development Service -->
+              <li class="expertise-card">
+                <div class="expertise-icon">
+                  <img src="assets/images/icon-dev.svg" alt="Web Development" width="40" />
+                </div>
+
+                <div class="expertise-details">
+                  <h4 class="expertise-title">Web Development</h4>
+                  <p class="expertise-description">
+                    Creating robust, professional-grade websites with
+                    cutting-edge technologies and best practices.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Mobile Development Service -->
+              <li class="expertise-card">
+                <div class="expertise-icon">
+                  <img src="assets/images/idea.png" alt="Problem Solving" width="40" />
+                </div>
+
+                <div class="expertise-details">
+                  <h4 class="expertise-title">Problem Solving</h4>
+                  <p class="expertise-description">
+                    I specialize in analytical thinking and logical
+                    problem-solving, crafting efficient and scalable solutions
+                    to complex challenges in web development.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Photography Service -->
+              <li class="expertise-card">
+                <div class="expertise-icon">
+                  <img src="assets/images/icon-photo.svg" alt="Photography" width="40" />
+                </div>
+
+                <div class="expertise-details">
+                  <h4 class="expertise-title">Photography</h4>
+                  <p class="expertise-description">
+                    Producing professional-grade photography across various
+                    categories with exceptional quality.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+
+          <!--skills-section -->
+          <section id="skills" class="skills-section">
+            <div class="section-header">
+              <h2 class="section-title">Technical Skills</h2>
+              <p class="section-subtitle">My professional toolkit and expertise</p>
+            </div>
+
+            <div class="skills-grid">
+              <!-- Frontend Development -->
+              <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-card-title">Frontend Development</h3>
+                    <p class="skill-card-subtitle">Core web technologies</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Frontend Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">HTML</span> - Semantic markup</li>
+                      <li class="skill-item"><span class="skill-highlight">CSS</span> - Advanced styling</li>
+                      <li class="skill-item"><span class="skill-highlight">JavaScript</span> - ES6+</li>
+                      <li class="skill-item"><span class="skill-highlight">React</span> - Component architecture</li>
+                      <li class="skill-item"><span class="skill-highlight">Tailwind CSS</span> - Utility-first styling
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UI/UX Design -->
+              <div class="skill-card" data-category="design">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-card-title">UI/UX Design</h3>
+                    <p class="skill-card-subtitle">Creating exceptional user experiences</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Design Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">Responsive Design</span> - Mobile-first
+                        approach</li>
+                      <li class="skill-item"><span class="skill-highlight">Cross-browser Compatibility</span> -
+                        Consistent experiences</li>
+                      <li class="skill-item"><span class="skill-highlight">User-centered Design</span> - Intuitive
+                        interfaces</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Web Accessibility -->
+              <div class="skill-card" data-category="accessibility">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3 class="skill-card-title">Web Accessibility</h3>
+                    <p class="skill-card-subtitle">Inclusive digital experiences</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Accessibility Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">WCAG Compliance</span> - AA standards</li>
+                      <li class="skill-item"><span class="skill-highlight">Semantic HTML</span> - Screen reader friendly
+                      </li>
+                      <li class="skill-item"><span class="skill-highlight">Keyboard Navigation</span> - Full
+                        functionality</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- State Management -->
+              <div class="skill-card" data-category="state">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-card-title">State Management</h3>
+                    <p class="skill-card-subtitle">Efficient data flow</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">State Management Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">React Query</span> - Server state</li>
+                      <li class="skill-item"><span class="skill-highlight">Context API</span> - Component state sharing
+                      </li>
+                      <li class="skill-item"><span class="skill-highlight">Redux</span> - Complex state management</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testing & Debugging -->
+              <div class="skill-card" data-category="testing">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="skill-card-title">Testing & Debugging</h3>
+                    <p class="skill-card-subtitle">Quality assurance</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Testing Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">Jest</span> - Unit & integration testing</li>
+                      <li class="skill-item"><span class="skill-highlight">Browser Dev Tools</span> - Performance
+                        analysis</li>
+                      <li class="skill-item"><span class="skill-highlight">Debugging</span> - Problem solving</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Version Control -->
+              <div class="skill-card" data-category="version-control">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-card-title">Version Control</h3>
+                    <p class="skill-card-subtitle">Collaborative development</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Version Control Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">Git</span> - Branching strategies</li>
+                      <li class="skill-item"><span class="skill-highlight">GitHub</span> - Pull requests & reviews</li>
+                      <li class="skill-item"><span class="skill-highlight">CI/CD</span> - Automated workflows</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Performance Optimization -->
+              <div class="skill-card" data-category="performance">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="skill-card-title">Performance Optimization</h3>
+                    <p class="skill-card-subtitle">Fast, efficient applications</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Performance Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">Code Splitting</span> - Reduced bundle size
+                      </li>
+                      <li class="skill-item"><span class="skill-highlight">Lazy Loading</span> - On-demand resources
+                      </li>
+                      <li class="skill-item"><span class="skill-highlight">Batch Size Optimization</span> - Efficient
+                        rendering</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- API Integration -->
+              <div class="skill-card" data-category="api">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="skill-card-title">API Integration</h3>
+                    <p class="skill-card-subtitle">Connecting services</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">API Skills</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">RESTful APIs</span> - CRUD operations</li>
+                      <li class="skill-item"><span class="skill-highlight">JSON</span> - Data formatting</li>
+                      <li class="skill-item"><span class="skill-highlight">Fetch/Axios</span> - Data retrieval</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Development Tools -->
+              <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                  <div class="skill-card-front">
+                    <div class="skill-card-icon">
+                      <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-card-title">Development Tools</h3>
+                    <p class="skill-card-subtitle">Professional toolkit</p>
+                  </div>
+                  <div class="skill-card-back">
+                    <h3 class="skill-card-title">Tool Proficiency</h3>
+                    <ul class="skill-list">
+                      <li class="skill-item"><span class="skill-highlight">VS Code</span> - Primary IDE</li>
+                      <li class="skill-item"><span class="skill-highlight">Postman</span> - API testing</li>
+                      <li class="skill-item"><span class="skill-highlight">Figma</span> - Design collaboration</li>
+                      <li class="skill-item"><span class="skill-highlight">npm/Yarn</span> - Package management</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          <section class="testimonial">
+            <h3 class="testimonial-title">Testimonials</h3>
+
+            <div class="testimonial-container">
+              <div class="testimonial-cards">
+                <div class="testimonial-card">
+                  <div class="testimonial-card-header">
+                    <img src="assets/images/avatar-1.png" alt="testimonial-1" class="testimonial-img" />
+                    <div class="testimonial-card-header-info">
+                      <h3 class="testimonial-card-header-name">Dipti Sinha</h3>
+                      <p class="time">14 June, 2024</p>
+                      <p class="testimonial-card-header-position">Richard was hired to create a corporate identity. We
+                        were very pleased with the work done. She has a lot of experience and is very concerned about
+                        the needs of client. Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-card-header">
+                    <img src="assets/images/avatar-2.png" alt="testimonial-2" class="testimonial-img" />
+                    <div class="testimonial-card-header-info">
+                      <h3 class="testimonial-card-header-name">Emily Evans</h3>
+                      <p class="time">14 June, 2024</p>
+                      <p class="testimonial-card-header-position">Richard was hired to create a corporate identity. We
+                        were very pleased with the work done. She has a lot of experience and is very concerned about
+                        the needs of client. Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <div class="testimonial-card-header">
+                    <img src="assets/images/avatar-3.png" alt="testimonial-3" class="testimonial-img" />
+                    <div class="testimonial-card-header-info">
+                      <h3 class="testimonial-card-header-name">Rohit Patil</h3>
+                      <p class="time">14 June, 2024</p>
+                      <p class="testimonial-card-header-position">Richard was hired to create a corporate identity. We
+                        were very pleased with the work done. She has a lot of experience and is very concerned about
+                        the needs of client. Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-arrows">
+                <div class="testimonial-arrow prev-testimonial">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="testimonial-arrow next-testimonial">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-controls">
+              <div class="testimonial-dot active" data-index="0"></div>
+              <div class="testimonial-dot" data-index="1"></div>
+              <div class="testimonial-dot" data-index="2"></div>
+            </div>
+          </section>
+      </div>
+
+
+      <!-- #RESUME-->
+      <section id="resume" class="page">
+        <header class="resume_header">
+          <h2 class="section-title">Resume</h2>
+          <div class="resume_pdf">
+            <a href="https://drive.google.com/file/d/1f6x5e2EP5SvZS1G3sXEKr2yvzFPJhmbM/view?usp=sharing"
+              download="Mohammed Samier Resume" class="resume_download" target="_blank">
+              <i class="fa-solid fa-arrow-down"></i>
+              Show Resume
+            </a>
+
+          </div>
+        </header>
+        <!-- education-section -->
+        <section class="education-section">
+          <div class="timeline">
+            <div class="timeline-header">
+              <h2 class="education-title">
+                <img src="assets/images/modern_book-removebg-preview.png" alt="Education Icon">
+                <span>Education</span>
+              </h2>
+            </div>
+
+            <div class="timeline-container">
+              <!-- University Education -->
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                  <h3 class="institution-name">University of Computer Science in Egypt</h3>
+                  <p class="University_name">Egypt Higher Institute for Engineering and Technology</p>
+                  <span class="timeline-date">2022 — 2026</span>
+                  <p class="education-description">
+                    Studied Computer Science for four years, gaining a strong foundation in programming, data
+                    structures, algorithms, and databases. Developed web development skills using HTML, CSS, and
+                    JavaScript, along with learning modern technologies such as React and Git. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience-section">
+          <div class="timeline">
+            <div class="timeline-header">
+              <h2 class="experience-title">
+                <img src="assets/images/TRAINING.png" alt="TRAINING Icon">
+                <span>TRAINING </span>
+              </h2>
+            </div>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                  <h3 class="institution-name">National Institute of Communications</h3>
+                  <span class="timeline-date">(Oct 2024 - Dec 2024 | 3 months)</span>
+                  <p class="education-description">
+                    Designed and implemented responsive, user-friendly web interfaces.
+                    • Developed proficiency in HTML, CSS, JavaScript, and React.
+                    • Contributed to real-world projects, enhancing problem-solving and collaboration skills </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                  <h3 class="institution-name">Egypt Digital Pioneers Program offered by the Egyptian Ministry of
+                    Communications.</h3>
+                  <span class="timeline-date"> (Apr 2024 - Nov 2024 | 8 months)</span>
+                  <p class="education-description">
+                    • Completed advanced training in Front-end Development.
+                    • Built responsive, modern web applications using HTML, CSS, JavaScript, and React.
+                    • Collaborated on industry projects, applying modern coding standards and best practices. </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-container">
+              <div class="timeline-item">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                  <h3 class="institution-name">Information Technology Institute (ITI) </h3>
+                  <span class="timeline-date"> (Jun 2023 - Jul 2023 | 2 months)</span>
+                  <p class="education-description">
+                    Built responsive user interfaces using HTML, CSS, JavaScript, and React.
+                    • Gained hands-on experience applying industry best practices in real-world projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- certificates-section -->
+        <section id="certificates" class="certificates-section">
+          <div class="section-header">
+            <h2 class="section-title">My Certificates in Front-End Development:</h2>
+            <p class="section-subtitle">Gained advanced skills in HTML, CSS, JavaScript, and modern web development
+              technologies.
+            </p>
+          </div>
+          <div class="certificates-container">
+            <!-- Certificate Item 1 -->
+            <div class="certificate-item">
+              <div class="certificate-image">
+                <img src="assets/images/Screenshot 2025-04-04 150708.png" alt="Web Development Certificate">
+                <div class="certificate-overlay">
+                  <div class="certificate-actions">
+                    <a href="https://drive.google.com/file/d/1GoAmlweaUbv3S_u6FwzNZ9fBZNw83mUA/view?usp=sharingS"
+                      class="certificate-link view-certificate" title="View Certificate" target="_blank">
+                      <i class="fas fa-eye"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h3 class="certificate-title">Egypt Digital Pioneers Program offered by the Egyptian Ministry of
+                  Communications.</h3>
+                <p class="certificate-issuer">Issued by: DEPI</p>
+                <p class="certificate-date">Date: April 2024</p>
+                <div class="certificate-tags">
+                  <span class="cert-tag">Web Development</span>
+                  <span class="cert-tag">HTML</span>
+                  <span class="cert-tag">CSS</span>
+                  <span class="cert-tag"> Tailwind CSS</span>
+                  <span class="cert-tag">Responsive Design</span>
+                  <span class="cert-tag">JavaScript</span>
+                  <span class="cert-tag">React</span>
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificate Item 2 -->
+            <div class="certificate-item">
+              <div class="certificate-image">
+                <img src="assets/images/113-alx-ai-starter-kit-certificate-mohammed-mouawad.png"
+                  alt="AI Starter Kit Certification – ALX">
+                <div class="certificate-overlay">
+                  <div class="certificate-actions">
+                    <a href="https://intranet.alxswe.com/certificates/5GmJpZhy6f"
+                      class="certificate-link verify-certificate" title="Verify Certificate" target="_blank">
+                      <i class="fas fa-certificate"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h3 class="certificate-title">AI Starter Kit Certification – ALX </h3>
+                <p class="certificate-issuer">Issued by: ALX</p>
+                <p class="certificate-date">Date: March 2025</p>
+                <div class="certificate-tags">
+                  <span class="cert-tag">AI Tool</span>
+                  <span class="cert-tag">Design</span>
+                </div>
+              </div>
+            </div>
+            <!-- Certificate Item 3 -->
+            <div class="certificate-item">
+              <div class="certificate-image">
+                <img src="assets/images/Screenshot 2025-04-04 155643.png" alt="Udemy Certification">
+                <div class="certificate-overlay">
+                  <div class="certificate-actions">
+                    <a href="https://www.udemy.com/certificate/UC-b68caf3e-af74-41e1-9628-7ce72c65d68f/"
+                      class="certificate-link verify-certificate" title="Verify Certificate" target="_blank">
+                      <i class="fas fa-certificate"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h3 class="certificate-title">Web Front End Learning Guide </h3>
+                <p class="certificate-issuer">Issued by: Udemy</p>
+                <p class="certificate-date">Date: Feb.2024</p>
+                <div class="certificate-tags">
+                  <span class="cert-tag">Web Development</span>
+                  <span class="cert-tag">HTML</span>
+                  <span class="cert-tag">CSS</span>
+                  <span class="cert-tag">Responsive Design</span>
+                  <span class="cert-tag">JavaScript</span>
+                  <span class="cert-tag">JQuiry</span>
+                  <span class="cert-tag">React</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- Other Certificates  -->
+          <div class="section-header">
+            <h2 class="section-title">Other Certificates in HR Development Certificate:</h2>
+            <p class="section-subtitle">Gained advanced skills in talent development, employee engagement, and
+              aligning
+              HR strategies with business goals.</p>
+          </div>
+          <div class="certificates-container">
+
+            <!-- Certificate Item 1 -->
+            <div class="certificate-item">
+              <div class="certificate-image">
+                <img src="assets/images/Screenshot 2025-04-04 153058.png" alt="HR Development Certificate">
+                <div class="certificate-overlay">
+                  <div class="certificate-actions">
+                    <a href="https://drive.google.com/file/d/1yXC-rdJHnTdDYqzNxP7bcJRzCvh8lIE8/view?usp=sharing"
+                      class="certificate-link verify-certificate" title="Verify Certificate" target="_blank">
+                      <i class="fas fa-certificate"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h3 class="certificate-title"> Training in Financial Literacy & Entrepreneurial Skills</h3>
+                <p class="certificate-issuer">Issued by: CIB Bank,linkedin</p>
+                <p class="certificate-date">Date: September 2024</p>
+              </div>
+            </div>
+
+            <!-- Certificate Item 2 -->
+            <div class="certificate-item">
+              <div class="certificate-image">
+                <img src="assets/images/Screenshot 2025-04-04 154255.png" alt="HR Development Certificate">
+                <div class="certificate-overlay">
+                  <div class="certificate-actions">
+                    <a href="https://drive.google.com/file/d/1P3rRIBags4RNxU59B7ejPBbu2ROvKa0Z/view?usp=sharing"
+                      class="certificate-link verify-certificate" title="Verify Certificate" target="_blank">
+                      <i class="fas fa-certificate"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h3 class="certificate-title"> Training in Emerging Talent for the Future Workplace</h3>
+                <p class="certificate-issuer">Issued by: CIB Bank</p>
+                <p class="certificate-date">Date: September 2024</p>
+              </div>
+            </div>
+            <!-- Certificate Item 3 -->
+
+
+            <div class="certificate-item">
+              <div class="certificate-image">
+                <img src="assets/images/Screenshot 2025-04-04 155036.png" alt="HR Development Certificate">
+                <div class="certificate-overlay">
+                  <div class="certificate-actions">
+                    <a href="https://drive.google.com/file/d/1yXC-rdJHnTdDYqzNxP7bcJRzCvh8lIE8/view?usp=sharing"
+                      class="certificate-link verify-certificate" title="Verify Certificate" target="_blank">
+                      <i class="fas fa-certificate"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h3 class="certificate-title"> Training in Digital Transformation and Data Literacy</h3>
+                <p class="certificate-issuer">Issued by: CIB Bank ,SaaS</p>
+                <p class="certificate-date">Date: September 2024</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+      <!-- #portfolio -->
+      <section id="portfolio" class="page">
+        <!-- portfolio header -->
+        <header class="portfolio-header">
+          <h2 class="section-title-Portfolio">Portfolio</h2>
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">
+              <span class="filter-icon">
+                <i class="fa-solid fa-grid-2"></i>
+                <span class="filter-text"> All Projects
+                </span>
+                <span class="filter-count"></span>
+            </button>
+            <button class="filter-btn" data-filter="frontend">
+              <span class="filter-icon"><i class="fa-solid fa-code"></i>
+              </span>
+              <span class="filter-text">HTML/CSS</span>
+              <span class="filter-count"></span>
+            </button>
+            <button class="filter-btn" data-filter="frontend">
+              <span class="filter-icon"><i class="fa-solid fa-code"></i></span>
+              <span class="filter-text">HTML/CSS/JS</span>
+              <span class="filter-count"></span>
+            </button>
+            <button class="filter-btn" data-filter="react">
+              <span class="filter-icon">
+                <i class="fa-brands fa-react"></i></span>
+              <span class="filter-text">React</span>
+              <span class="filter-count"></span>
+            </button>
+          </div>
+        </header>
+
+        <div class="portfolio-container">
+          <!-- Project 1 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/enhanced_image.png" alt="Digital Marketing Experts" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/Digital-Marketing-Experts/" class="portfolio-link"
+                    target="_blank" aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  <a href="https://github.com/mohamed-samir-dev/Digital-Marketing-Experts" class="portfolio-link"
+                    target="_blank" aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Digital Marketing Experts</h3>
+              <p class="portfolio-description">Created a digital marketing website using HTML, CSS. It
+                has a responsive design and an engaging user experience. Focused on performance, usability, and
+                accessibility.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/enhanced2_image.png" alt="Restaurant" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/Restaurant/" class="portfolio-link" target="_blank"
+                    aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  </a>
+                  <a href="https://github.com/mohamed-samir-dev/Restaurant" class="portfolio-link" target="_blank"
+                    aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Restaurant</h3>
+              <p class="portfolio-description">Restaurant is a modern and visually appealing restaurant website
+                designed
+                to showcase menu items, services, and customer engagement features. Built with HTML, CSS, it offers
+                a
+                user-friendly experience with a responsive and elegant design.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/processed_image.png" alt="Ice Cream Delight Website" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/ice-cream-delight/" class="portfolio-link"
+                    target="_blank" aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  </a>
+                  <a href="https://github.com/mohamed-samir-dev/ice-cream-delight" class="portfolio-link"
+                    target="_blank" aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Ice Cream Delight</h3>
+              <p class="portfolio-description">A responsive e-commerce website for an ice cream shop featuring a
+                modern
+                design, product catalog, and ordering system.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/Screenshot 2025-04-01 215806.png" alt="JAdoo Premium Travel Experiences."
+                loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/Jadoo-Premium-Travel-Experiences" class="portfolio-link"
+                    target="_blank" aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  </a>
+                  <a href="https://github.com/mohamed-samir-dev/Jadoo-Premium-Travel-Experiences" class="portfolio-link"
+                    target="_blank" aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Jadoo | Premium Travel Experiences.</h3>
+              <p class="portfolio-description">Jadoo Premium Travel Experiences" website simplifies travel bookings
+                with destinations, flights, hotels, and local events. Users can select destinations, make secure
+                payments, and book with 24/7 expert support. Popular locations like Rome, London, and Santorini are
+                featured, offering tailored travel experiences.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/Screenshot 2025-04-01 200646.png" alt="Note-Taking-Application Website"
+                loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/Jadoo-Premium-Travel-Experiences/" class="portfolio-link"
+                    target="_blank" aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  </a>
+                  <a href="https://github.com/mohamed-samir-dev/Jadoo-Premium-Travel-Experiences/tree/master?tab=readme-ov-file"
+                    class="portfolio-link" target="_blank" aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Note-Taking-Application</h3>
+              <p class="portfolio-description">web-based app built with HTML, CSS, and JavaScript that allows users
+                to
+                create, edit, and delete personal notes. The app is designed for simplicity and ease of use,
+                enabling
+                users to quickly capture and manage their ideas or important information</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/Screenshot 2025-04-01 200941.png" alt="random-password-generator-js Website"
+                loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/random-password-generator-js/" class="portfolio-link"
+                    target="_blank" aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  </a>
+                  <a href="https://github.com/mohamed-samir-dev/Note-Taking-Application" class="portfolio-link"
+                    target="_blank" aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">random-password-generator-js</h3>
+              <p class="portfolio-description">web application built with HTML, CSS, and JavaScript that helps users
+                generate strong and secure random passwords. The app allows users to customize the password length
+                and
+                choose specific criteria, such as including lowercase letters, uppercase letters, numbers, and
+                special
+                characters.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- Project 7 -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="assets/images/Screenshot 2025-04-01 200314.png" alt="TodoList Website" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-actions">
+                  <a href="https://mohamed-samir-dev.github.io/TodoList/" class="portfolio-link" target="_blank"
+                    aria-label="View live project">
+                    <i class="fa-solid fa-eye"></i> </a>
+                  </a>
+                  <a href="https://github.com/mohamed-samir-dev/TodoList" class="portfolio-link" target="_blank"
+                    aria-label="View source code">
+                    <i class="fa-brands fa-github"></i> </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">TodoLists</h3>
+              <p class="portfolio-description">simple web application for task management, built using HTML, CSS,
+                and
+                JavaScript. The website allows users to create a personal task list, add new tasks, and delete
+                completed
+                ones. It provides an easy and flexible way to organize tasks.</p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- contact  -->
+
+      <section id="contact" class="outreach-block page">
+        <div class="intro-wrapper">
+          <div class="intro-content">
+            <h2 class="headline-primary">Get In Touch</h2>
+            <div class="accent-divider"></div>
+            <p class="intro-text">Let's collaborate on your next project. Feel free to reach out!</p>
+          </div>
+        </div>
+        <div class="dual-column-layout">
+          <!-- Form Column -->
+          <div class="form-column">
+            <div class="form-wrapper">
+              <form id="contact-form" class="message-form">
+                <div class="dual-input-row">
+                  <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <div class="input-container">
+                      <i class="fas fa-user"></i>
+                      <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                  </div>
+
+                  <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-container">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="subject">Subject</label>
+                  <div class="input-container">
+                    <i class="fas fa-bookmark"></i>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="message">Message</label>
+                  <div class="input-container textarea-container">
+                    <i class="fas fa-comment-alt"></i>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                      required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="action-button">
+                  <span class="button-label">Send Message</span>
+                  <span class="button-graphic">
+                    <i class="fas fa-paper-plane"></i>
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

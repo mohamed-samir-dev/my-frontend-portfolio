@@ -1,0 +1,970 @@
+@media screen and (max-width: 1024px) {
+
+    /* Main container styling */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+
+    /* Profile sidebar styling */
+    .profile-sidebar {
+        width: 100%;
+        max-width: 7000px;
+    }
+
+    .profile-avatar {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 25px;
+        position: relative;
+        border: 4px solid rgba(243, 246, 252, 0.1);
+    }
+
+    .profile-name {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .profile-role {
+        font-size: 1rem;
+        color: hsl(45, 100%, 72%);
+    }
+
+    /* Contact container styling */
+
+    .contact-container {
+        transform: none;
+        transition: all 0.5s ease;
+        position: relative;
+    }
+
+    .contact-item {
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .contact-item:hover {
+        background: rgba(255, 255, 255, 0.07);
+        transform: translateY(-2px);
+    }
+
+    .contact-content {
+        font-weight: 800;
+    }
+
+    .contact-value {
+        font-size: 1rem;
+    }
+
+    /* Social network icons positioning */
+    .social-network-list {
+        position: absolute;
+        top: 0;
+        right: 280px;
+        margin-top: -10px;
+    }
+
+    .social-network-link:hover .fa-linkedin {
+        color: #0077b5;
+        text-shadow: 0 0 10px rgba(0, 119, 181, 0.5);
+    }
+
+    .social-network-link:hover .fa-x {
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .social-network-link:hover .fa-github {
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .social-network-link:hover .fa-whatsapp {
+        color: #25D366;
+        text-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+    }
+
+    /* Profile expand button  styling */
+    .profile-expand-btn::before {
+        content: 'Contacts';
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .profile-expand-btn i {
+        margin-left: 5px;
+    }
+
+    /* Expertise card styling  */
+
+    .expertise-card {
+        border-radius: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        position: relative;
+        background-color: #2d2d2e;
+        margin-bottom: 20px;
+    }
+
+
+
+    .expertise-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: hsl(45, 100%, 72%);
+        border-radius: 2.5px 0 0 2.5px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    /* Testimonial section styling */
+    .time {
+        color: hsl(45, 100%, 72%);
+
+    }
+
+    .testimonial-arrow:hover {
+        background-color: hsl(45, 100%, 72%);
+        color: #222;
+        box-shadow: 0 5px 15px rgba(255, 217, 102, 0.3);
+    }
+
+    .overview-text {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+    .testimonial-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .testimonial-dot.active {
+        background-color: hsl(45, 100%, 72%);
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(255, 217, 102, 0.5);
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    /* .social-network styling */
+    .social-network-list {
+        right: 270px;
+    }
+
+    /*About me styling */
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: hsl(45, 100%, 72%);
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .overview-text {
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+
+    /* Expertise card styling */
+    .expertise-card {
+        background-color: #2d2d2e;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* profile styling */
+    .profile-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .profile-role {
+        font-size: 1.01rem;
+        font-weight: 500;
+    }
+
+    /* contact styling */
+    .contact-label {
+        font-size: 0.85rem;
+        margin-bottom: 2px;
+    }
+
+    .contact-value {
+        font-size: 0.87rem;
+    }
+
+    /* Social network icons  */
+    .social-network-list {
+        right: 250px;
+    }
+
+
+    /* Section title */
+    .section-title {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .overview-text {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    /* Left border  for paragraphs */
+    .overview-text::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom, hsl(45, 100%, 72%), transparent);
+        border-radius: 1.5px;
+    }
+
+    /* Expertise card styling */
+    .expertise-card {
+        background-color: #2d2d2e;
+    }
+
+    .expertise-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .expertise-description {
+        font-size: 1rem;
+    }
+
+
+    /* Testimonial styling */
+    .testimonial-cards {
+        background-color: #313030;
+        border-radius: 10px;
+    }
+
+    .testimonial-card-header-name {
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .time {
+        font-size: 12px;
+        color: #ffffff;
+        font-style: italic;
+        opacity: 0.7;
+    }
+
+    .testimonial-card-header-position {
+        color: #ffffff;
+    }
+
+    /* Skills Section  */
+    .skills-section {
+        padding: 40px 20px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        color: hsl(45, 100%, 72%);
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .skill-card {
+        height: 260px;
+    }
+
+    .skill-card-title {
+        font-size: 16px;
+    }
+
+    .skill-card-subtitle {
+        font-size: 12px;
+    }
+
+    .skill-card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .skill-list {
+        padding-left: 15px;
+    }
+
+    .skill-item {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .skill-highlight {
+        font-size: 12px;
+    }
+
+    /* portfolio section */
+
+    .section-title-Portfolio {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .portfolio-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .filter-text {
+        font-size: 0.85rem;
+    }
+
+    .filter-icon {
+        margin-right: 5px;
+    }
+
+
+    .portfolio-item {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .portfolio-image {
+        height: 180px;
+    }
+
+    .portfolio-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .portfolio-content {
+        padding: 12px;
+    }
+
+    .portfolio-title {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .portfolio-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .portfolio-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+
+    .portfolio-actions a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+
+    /* social-network-list styling */
+    .social-network-list {
+        right: 220px;
+    }
+
+    /* contact   styling */
+    .contact-value {
+        font-size: 0.85rem;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* navigation-menu */
+    .navigation-menu {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 5px;
+    }
+
+    .primary-navigation {
+        margin: 15px 0;
+        padding: 5px;
+        background-color: #f8f9fa;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Page section */
+    .page {
+        padding: 20px 15px;
+    }
+
+    .section-header {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .section-title {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 0 15px 0;
+    }
+
+    .overview-text {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* expertise-card */
+    .expertise-card {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+        background-color: #2d2d2e;
+    }
+
+    /* testimonial title */
+    .testimonial-title {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    /* Testimonial name */
+    .testimonial-card-header-name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* Testimonial date */
+    .time {
+        font-size: 12px;
+
+    }
+
+    /* Testimonial text */
+    .testimonial-card-header-position {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+}
+
+@media screen and (max-width: 643px) {
+    .social-network-list {
+        right: 200px;
+    }
+
+    /* Portfolio section styling */
+    .section-title-Portfolio {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .portfolio-filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 7px 10px;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+
+    .filter-text {
+        font-size: 0.8rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .portfolio-image {
+        height: 200px;
+    }
+
+    .portfolio-title {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .portfolio-description {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .portfolio-tech {
+        justify-content: center;
+    }
+
+    .tech-tag {
+        font-size: 0.65rem;
+        padding: 2px 5px;
+    }
+
+    .portfolio-actions {
+        justify-content: center;
+    }
+
+    .portfolio-actions a {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .social-network-list {
+        right: 180px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* profile sidebar styling */
+    .profile-avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .profile-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .profile-role {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    /* social-network-list styling */
+    .social-network-list {
+        right: 160px;
+    }
+
+    /* contact styling */
+    .contact-item {
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+
+    /* about section-title styling */
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+        color: #f3f6fc;
+        position: relative;
+        padding-left: 10px;
+    }
+
+    /* testimonial styling */
+    .time {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .testimonial-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .overview-text {
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-size: 0.85rem;
+    }
+
+    .testimonial-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+}
+
+@media screen and (max-width: 549px) {
+
+    /* social-network-list styling */
+    .social-network-list {
+        right: 150px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .profile-sidebar {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 12px;
+    }
+
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-name {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .profile-role {
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+
+    .overview-text {
+        font-size: 0.75rem;
+    }
+
+
+    .menu-item button {
+        padding: 6px 8px;
+    }
+
+    .menu-item button {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+
+    .menu-item button::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: hsl(45, 100%, 72%);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+        opacity: 0;
+        border-radius: 1px;
+    }
+
+    /* social-network-list styling */
+    .social-network-list {
+        right: 80px;
+    }
+
+
+    /* expertise card */
+
+    .expertise-showcase {
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .showcase-title {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 10px;
+    }
+
+    .expertise-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .expertise-card {
+        position: relative;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .expertise-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: hsl(45, 100%, 72%);
+        border-radius: 1.5px 0 0 1.5px;
+    }
+
+
+    .expertise-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 36px;
+        height: 36px;
+        margin-right: 10px;
+        border-radius: 8px;
+        padding: 6px;
+    }
+
+    .expertise-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .expertise-card:hover .expertise-icon img {
+        transform: scale(1.1);
+    }
+
+    .expertise-details {
+        flex: 1;
+    }
+
+    .expertise-title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #f3f6fc;
+        margin: 0 0 5px;
+    }
+
+    .expertise-description {
+        font-size: 0.7rem;
+        line-height: 1.4;
+        color: rgba(243, 246, 252, 0.7);
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* testimonial  styling */
+    .testimonial {
+        position: relative;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-title {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 10px;
+    }
+
+    .testimonial-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #1e222a, #262b36);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .testimonial-card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .testimonial-card-header-info {
+        width: 100%;
+    }
+
+    .testimonial-card-header-name {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #f3f6fc;
+        margin: 0 0 2px;
+    }
+
+    .time {
+        font-size: 0.65rem;
+        color: hsl(45, 100%, 72%);
+        margin: 0 0 8px;
+    }
+
+    .testimonial-card-header-position {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        color: rgba(243, 246, 252, 0.7);
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* skills styling */
+    .section-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: hsl(45, 100%, 72%);
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .skill-card {
+        height: 240px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        padding: 4px;
+    }
+
+    .social-network-list {
+        right: 80px;
+
+
+    }
+
+    #resume {
+        padding-top: 10px;
+        padding: 0 5px;
+    }
+
+
+    /* Portfolio section styling */
+    .section-title-Portfolio {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-filters {
+        gap: 5px;
+        margin-bottom: 12px;
+    }
+
+    .filter-btn {
+        max-width: 220px;
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+
+    .filter-icon {
+        font-size: 0.8rem;
+        margin-right: 3px;
+    }
+
+    .filter-text {
+        font-size: 0.75rem;
+    }
+
+    .portfolio-container {
+        gap: 12px;
+    }
+
+    .portfolio-item {
+        border-radius: 6px;
+    }
+
+    .portfolio-image {
+        height: 160px;
+    }
+
+    .portfolio-content {
+        padding: 10px 8px;
+    }
+
+    .portfolio-title {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .portfolio-description {
+        font-size: 0.7rem;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .tech-tag {
+        font-size: 0.6rem;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+
+    .portfolio-actions a {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .portfolio-overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
