@@ -1,3 +1,17 @@
+@media screen and (max-width: 1200px) {
+
+    .expertise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     /* Main container styling */
@@ -56,37 +70,9 @@
         font-size: 1rem;
     }
 
-    /* Social network icons positioning */
-    .social-network-list {
-        position: absolute;
-        top: 0;
-        right: 280px;
-        margin-top: -10px;
-    }
-
-    .social-network-link:hover .fa-linkedin {
-        color: #0077b5;
-        text-shadow: 0 0 10px rgba(0, 119, 181, 0.5);
-    }
-
-    .social-network-link:hover .fa-x {
-        color: #ffffff;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-
-    .social-network-link:hover .fa-github {
-        color: #ffffff;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-
-    .social-network-link:hover .fa-whatsapp {
-        color: #25D366;
-        text-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
-    }
-
     /* Profile expand button  styling */
     .profile-expand-btn::before {
-        content: 'Contacts';
+        content: 'More Information';
         display: inline-block;
         margin-right: 5px;
     }
@@ -99,31 +85,28 @@
 
     .expertise-card {
         border-radius: 12px;
-        display: flex;
-        align-items: flex-start;
         gap: 10px;
         position: relative;
         background-color: #2d2d2e;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 20px;
+
     }
 
-
-
-    .expertise-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 5px;
-        height: 100%;
-        background: hsl(45, 100%, 72%);
-        border-radius: 2.5px 0 0 2.5px;
-    }
 
     .section-title {
         font-size: 1.5rem;
         position: relative;
         padding-left: 15px;
+    }
+
+
+    .expertise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
     }
 
     /* Testimonial section styling */
@@ -161,33 +144,6 @@
     }
 }
 
-@media screen and (max-width: 991px) {
-
-    /* .social-network styling */
-    .social-network-list {
-        right: 270px;
-    }
-
-    /*About me styling */
-    .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        color: hsl(45, 100%, 72%);
-        position: relative;
-        padding-left: 15px;
-    }
-
-    .overview-text {
-        line-height: 1.7;
-        font-size: 1rem;
-    }
-
-    /* Expertise card styling */
-    .expertise-card {
-        background-color: #2d2d2e;
-
-    }
-}
 
 
 @media screen and (max-width: 768px) {
@@ -213,10 +169,6 @@
         font-size: 0.87rem;
     }
 
-    /* Social network icons  */
-    .social-network-list {
-        right: 250px;
-    }
 
 
     /* Section title */
@@ -243,18 +195,33 @@
     }
 
     /* Expertise card styling */
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
     .expertise-card {
-        background-color: #2d2d2e;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expertise-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
     }
 
     .expertise-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         margin-bottom: 10px;
     }
 
     .expertise-description {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 
@@ -412,15 +379,56 @@
         height: 35px;
         font-size: 16px;
     }
+
+    /* My Network section styling */
+    .form-wrapper {
+        padding: 30px;
+    }
+
+    .form-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 30px;
+    }
+
+    .dual-input-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .action-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* My Network */
+    .social-connections-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 30px;
+    }
+
+    .network-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .network-icon {
+        margin-bottom: 5px;
+    }
+
+
+
+
 }
 
 
 @media screen and (max-width: 680px) {
 
-    /* social-network-list styling */
-    .social-network-list {
-        right: 220px;
-    }
+
 
     /* contact   styling */
     .contact-value {
@@ -506,9 +514,6 @@
 }
 
 @media screen and (max-width: 643px) {
-    .social-network-list {
-        right: 200px;
-    }
 
     /* Portfolio section styling */
     .section-title-Portfolio {
@@ -575,11 +580,6 @@
     }
 }
 
-@media screen and (max-width: 599px) {
-    .social-network-list {
-        right: 180px;
-    }
-}
 
 @media screen and (max-width: 576px) {
 
@@ -600,10 +600,6 @@
         font-weight: 500;
     }
 
-    /* social-network-list styling */
-    .social-network-list {
-        right: 160px;
-    }
 
     /* contact styling */
     .contact-item {
@@ -615,7 +611,6 @@
     .section-title {
         font-size: 1.2rem;
         margin-bottom: 12px;
-        color: #f3f6fc;
         position: relative;
         padding-left: 10px;
     }
@@ -642,16 +637,70 @@
         height: 6px;
     }
 
-}
+    /* form styling */
+    .form-wrapper {
+        padding: 25px;
+    }
 
-@media screen and (max-width: 549px) {
+    .form-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
 
-    /* social-network-list styling */
-    .social-network-list {
-        right: 150px;
+    .form-header-icon {
+        margin-right: 0;
+    }
+
+    .form-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* My Network section styling */
+    .social-connections-container {
+        padding: 25px;
+    }
+
+    .header-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+    }
+
+    /* services section styling */
+
+    .showcase-title {
+        font-size: 24px;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .expertise-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .expertise-title,
+    .skill-card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .expertise-description,
+    .skill-card-subtitle {
+        font-size: 0.9rem;
     }
 }
-
 
 @media screen and (max-width: 480px) {
 
@@ -705,10 +754,6 @@
         border-radius: 1px;
     }
 
-    /* social-network-list styling */
-    .social-network-list {
-        right: 80px;
-    }
 
 
     /* expertise card */
@@ -725,58 +770,6 @@
         padding-left: 10px;
     }
 
-    .expertise-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .expertise-card {
-        position: relative;
-        padding: 12px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-    }
-
-    .expertise-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 3px;
-        height: 100%;
-        background: hsl(45, 100%, 72%);
-        border-radius: 1.5px 0 0 1.5px;
-    }
-
-
-    .expertise-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 36px;
-        height: 36px;
-        margin-right: 10px;
-        border-radius: 8px;
-        padding: 6px;
-    }
-
-    .expertise-icon img {
-        width: 24px;
-        height: 24px;
-    }
-
-    .expertise-card:hover .expertise-icon img {
-        transform: scale(1.1);
-    }
-
-    .expertise-details {
-        flex: 1;
-    }
 
     .expertise-title {
         font-size: 0.85rem;
@@ -871,13 +864,21 @@
         font-size: 14px;
     }
 
-    .skills-grid {
+    .skills-grid,
+    .expertise-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
     .skill-card {
         height: 240px;
+    }
+
+    .expertise-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        margin-bottom: 15px;
     }
 
 }
@@ -887,17 +888,16 @@
         padding: 4px;
     }
 
-    .social-network-list {
-        right: 80px;
-
-
-    }
 
     #resume {
         padding-top: 10px;
         padding: 0 5px;
     }
 
+    .profile-card {
+        padding: 10px 5px;
+        margin-bottom: 9px;
+    }
 
     /* Portfolio section styling */
     .section-title-Portfolio {
@@ -967,4 +967,16 @@
     .portfolio-overlay {
         background-color: rgba(0, 0, 0, 0.7);
     }
+}
+
+@media screen and (max-width: 370px) {
+    main {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+   
 }
