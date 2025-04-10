@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       document.getElementById(targetPage).classList.add("active");
 
-      window.scrollTo(0, 0);
     });
   });
 });
